@@ -14,7 +14,7 @@ def get_num():
             
             # Split the line into key and value
             if '=' in line:
-                key, value = line.split('=', 1)
+                key, value = line.split('value_to_replace=', 1)
                 # Convert the value to an integer
                 number = int(value.strip())
             else:

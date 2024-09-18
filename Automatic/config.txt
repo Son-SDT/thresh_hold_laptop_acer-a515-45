@@ -1,1 +1,2 @@
-value_to_replace=80
+value_to_replace=92
+python_path=/home/son/Downloads/Apps/Anaconda3/bin/python
