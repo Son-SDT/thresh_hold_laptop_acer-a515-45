@@ -14,6 +14,6 @@
 
 #    For automatic feature: 
 <br>
-- You run python directory-of-setup.py
-- Change threshold number : set <new-number>
-- The process will startup and run automatically
+- You run python directory-of-setup.py <br>
+- Change threshold number : set <new-number> <br>
+- The process will startup and run automatically <br>
