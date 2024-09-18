@@ -11,7 +11,7 @@
 - You can set alias for "python chargeto.py": <br>
 - echo "alias short-name='python directory-of-chargeto.py'" >> ~/.bash <br>
 - Then the command : short-name your-percentage-here <br>
-<br>
+
 #    For automatic feature: 
 <br>
 - You run python directory-of-setup.py
