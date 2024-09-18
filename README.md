@@ -1,4 +1,5 @@
 #   Note:
+<br>
 - I just test only in ubuntu 22.04.4 LTS<br>
 - Cannot use in Windows <br>
 - 0 is charge and 1 is uncharge <br>
@@ -12,7 +13,7 @@
 - Then the command : short-name your-percentage-here <br>
 <br>
 #    For automatic feature: 
-
+<br>
 - You run python directory-of-setup.py
 - Change threshold number : set <new-number>
 - The process will startup and run automatically
