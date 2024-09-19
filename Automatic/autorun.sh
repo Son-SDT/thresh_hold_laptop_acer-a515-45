@@ -6,6 +6,12 @@ source ~/.bashrc
 SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
 # Log file for errors
 LOG_FILE="$SCRIPT_DIR/autorun.log"  # Updated path to use username
+# Read the Python path from the file
+PYTHON_DIR=$(grep '^python_path=' $SCRIPT_DIR/config.txt | cut -d'=' -f2)
+log_with_timestamp "Python directory: $PYTHON_DIR"
+
+$PYTHON_DIR $SCRIPT_DIR/clean_file_log.py
+
 
 # Function to log with timestamp
 log_with_timestamp() {
@@ -15,12 +21,10 @@ log_with_timestamp() {
 
 
 
-# Read the Python path from the file
-PYTHON_DIR=$(grep '^python_path=' $SCRIPT_DIR/config.txt | cut -d'=' -f2)
-log_with_timestamp "Python directory: $PYTHON_DIR"
+
 # Run the Python script to clean the file log and log any errors
 {
-    $PYTHON_DIR $SCRIPT_DIR/clean_file_log.py
+    
     log_with_timestamp "Running clean_file_log.py..."
     log_with_timestamp "clean_file_log.py completed."
 } 2>&1 | while IFS= read -r line; do log_with_timestamp "$line"; done
